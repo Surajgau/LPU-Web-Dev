@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+           
+            background-color: rgb(245, 243, 243);
+             height:auto;
+             padding: 20px;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+background-color: red;
+ padding: 0 20px;
+            align-items: center;
+        }
+
+        #nav_item {
+            display: flex;
+            justify-content: center;
+
+         
+            gap: 50px;
+            list-style: none;
+        }
+
+        #nav_item a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        #nav_item a:link {
+            color: rgb(246, 246, 247);
+        }
+
+        #nav_item a:visited {
+
+            color: black;
+        }
+
+        #nav_item a:hover {
+            background-color: black;
+            font-size: 20px;
+        }
+
+        #nav_item a:active {
+            background-color: green;
+            font-size: 30px
+        }
+
+        fieldset {
+border: 2px solid rgb(163, 163, 163);
+max-width: 500px;
+margin: 30px auto;
+padding: 30px;
+border-radius: 30px;
+background-color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+
+  legend{
+     font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+
+        table,th,td{
+           
+             border: 1px solid;
+             border-collapse: collapse;
+        }
+        table{
+            margin: 10px 100px;
+            padding: auto;
+            width: 500px;
+          
+        }
+
+
+
+        table tr{
+            height: 50px;
+        }
+        table tr:first-child{
+            background-color: red;
+        }
+        table tr:nth-child(2n){
+            background-color: rgb(0, 255, 128);
+        }
+        table tr:hover:nth-child(2n-1){
+            background-color: aqua;
+        }
+       
+    p:only-child{
+            background-color: rgb(237, 237, 11);
+        }
+
+
+
+
+         .form-group {
+    margin-bottom: 20px;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+  }
+
+    input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+   
+  }
+  input:focus{
+    background-color: yellow;
+    /* outline:10px solid red; */
+  }
+    input:placeholder-shown {
+    border-style: dashed;
+  }
+input[type='radio']:checked + span{
+    box-shadow: 0 0 0 5px red;
+    color: blue;
+}
+input:disabled{
+    border:2px solid rgb(236, 26, 26);
+}
+input[type='number']:out-of-range{
+    border: 10px solid red;
+    background-color: black;
+}
+
+  div.container p:first-of-type{
+    background-color: red;
+  }
+  div.container :only-of-type{
+    background-color: green;
+    width: 300px;
+    height: 30px;
+  }
+    </style>
+</head>
+
+<body>
+
+
+<div class="container">
+ <p></p>
+<div class="box1">
+    <h3>Box1 Heaading</h3>
+  <p>this is 1 paragraph</p>
+  <p>this is 2 paragraph</p>
+  <p>this is 3 paragraph</p>
+  <p>this is 4 paragraph</p>
+  <p>this is 5 paragraph</p>
+</div>
+   
+<h2></h2>
+<p>continer paragaph one</p>
+<p>continer paragaph two</p>
+<div class="box2">
+  <p>this is 1 paragraph</p>
+  <p>this is 2 paragraph</p>
+  <p>this is 3 paragraph</p>
+  <p>this is 4 paragraph</p>
+  <p>this is 5 paragraph</p>
+</div>
+</div>
+
+    <div><p>hekfhsdfsdkfjksdjflksdjflkdsj</p>
+    </div>
+    <div class="main_div">
+        <header id="navbar">
+            <h1>Logo</h1>
+            <nav>
+
+                <ul id="nav_item">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Project">Projects</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="Experince">Experience</a></li>
+                </ul>
+
+            </nav>
+            <img src="" alt="Profile">
+        </header>
+<fieldset>
+    <legend>Student Table</legend>
+    <table>
+     
+            <tr><th colspan="3">Student Table  hh</th></tr>
+            <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Roll_No</th>
+            </tr>
+
+            <tr>
+                <td>Suraj</td>
+                <td>Btech</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>CSE</td>
+                <td>@#$</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>mba</td>
+                <td>234</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>CSE</td>
+                <td>@#$</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>mba</td>
+                <td>234</td>
+            </tr><tr>
+                <td>Ankit</td>
+                <td>CSE</td>
+                <td>@#$</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>mba</td>
+                <td>234</td>
+            </tr><tr>
+                <td>Ankit</td>
+                <td>CSE</td>
+                <td>@#$</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>mba</td>
+                <td>234</td>
+            </tr>
+           <tr>
+                <td>Ankit</td>
+                <td>CSE</td>
+                <td>@#$</td>
+            </tr>
+            <tr>
+                <td>kajal</td>
+                <td>mba</td>
+                <td>234</td>
+            </tr>
+          
+        </table>
+</fieldset>
+        
+        <form action="">
+            <fieldset>
+    <legend>Registration Form</legend>
+
+    <div class="form-group">
+      <label for="username">Full Name</label>
+      <input type="text" id="username" placeholder="Enter your name..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="useremail">Email Address</label>
+      <input type="email" id="useremail" placeholder="example@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" minlength="6" placeholder="Enter password..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="9876543210" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" min="18" max="40" placeholder="Enter your age..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Joining Date</label>
+      <input type="date" id="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="rollno">System Generated ID</label>
+      <input type="text" id="rollno" value="EMP-2026-X9" disabled>
+    </div>
+
+
+<div class="form-group">
+  <span class="main-label">Gender</span>
+  
+  <div class="radio-container">
+  
+    <label class="radio-option">
+      <input type="radio" name="gender" value="male">
+      <span>Male</span>
+    </label>
+   
+  
+    <label class="radio-option">
+      <input type="radio" name="gender" value="female">
+      <span>Female</span>
+    </label>
+  </div>
+</div>
+<div class="form-group">
+  <span class="main-label">Select Your Hobbies</span>
+  
+  <div class="checkbox-container">
+    <!-- Option 1 -->
+    <label class="checkbox-option">
+      <input type="checkbox" name="hobbies" value="reading">
+      <span>Reading</span>
+    </label>
+   
+    <!-- Option 2 -->
+    <label class="checkbox-option">
+      <input type="checkbox" name="hobbies" value="coding">
+      <span>Coding</span>
+    </label>
+
+    <!-- Option 3 -->
+    <label class="checkbox-option">
+      <input type="checkbox" name="hobbies" value="sports">
+      <span>Sports</span>
+    </label>
+  </div>
+</div>
+
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="terms" required>
+      <label style="display:inline; margin:0;" for="terms">I accept all terms and conditions</label>
+    </div>
+
+    <button type="submit">Submit Form</button>
+  </fieldset>
+</form>
+
+
+
+    </div>
+
+</body>
+
+</html>
