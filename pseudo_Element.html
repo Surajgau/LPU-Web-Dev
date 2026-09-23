@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo Elements</title>
+    <style>
+      
+      p::first-letter {
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+      } 
+      .description::first-line {
+        color: blue;
+        font-weight: bold;
+      } 
+      ::selection {
+        background-color: yellow;
+        color: red;
+      }
+      li::marker {
+        color: green;
+        font-size: 25px;
+      } 
+      input::placeholder {
+        color: rgb(141, 252, 4);
+        font-style: italic;
+        font-size: 20px;
+      } 
+      h1::before {
+        content: "🔥 ";
+      } 
+      h1::after {
+        content: " 🚀";
+      } 
+      
+      
+      /* Before with display block */
+      p::before {
+        content: "Hello";
+        display:block;
+        background-color: yellow;
+        padding: 5px;
+      } /* After with display block */
+      p::after {
+        content: "Thank You";
+        display: block;
+        background-color: lightgreen;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn CSS</h1>
+    <h2>About CSS</h2>
+    <p class="description">
+      CSS is used to style and design web pages. It makes websites attractive
+      and user friendly. We can change colors, fonts, spacing and layouts using
+      CSS.
+    </p>
+    <h2>Topics to Learn</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+    <h2>Contact Form</h2>
+    <input type="text" placeholder="Enter your name" /> <br /><br />
+    <input type="email" placeholder="Enter your email" />
+  </body>
+</html>

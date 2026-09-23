@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .card {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        .card h1::before {
+            content: "👨‍💻 ";
+        }
+
+        .card h1::after {
+            content: " ⭐";
+        }
+
+        .about::first-letter {
+            color: red;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .about::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .skills li::marker {
+            color: green;
+            font-size: 20px;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: red;
+        }
+
+        input::placeholder {
+            color: rgb(194, 164, 11);
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0dafc4;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Student Profile</h1>
+
+        <p class="about">
+            We B.Tech student who is interested in
+            programming and web development. He enjoys
+            learning new technologies and creating projects.
+        </p>
+
+        <h2>My Skills</h2>
+
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+
+        <h2>Contact Me</h2>
+
+        <input type="text" placeholder="Enter your name">
+
+        <input type="email" placeholder="Enter your email">
+
+        <button>Submit</button>
+
+    </div>
+
+</body>
+
+</html>
+```
