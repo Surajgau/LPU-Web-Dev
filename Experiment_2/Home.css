@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+
+section1{
+  width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height:100px;
+    border: 2px solid red;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .navbar .linkes{
+     display: flex;
+    gap: 50px;
+    list-style:none;
+}
+.header .navbar .linkes a{
+     text-decoration: none;
+     color: black;
+     transition:.3s;
+     font-size:25px;
+     display: inline-block;
+     
+     
+}
+.header .navbar #profile{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+.header .navbar .linkes a:hover{
+  color: orange;
+  
+  transform:translateY(-10px);
+  
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.hero .hero_left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    /* border:2px solid red; */
+    padding: 20px 40px;
+    
+}
+.hero .hero_left h1 span{
+    color:rgb(240, 117, 10);
+}
+.hero .hero_left p{
+    line-height:1.5em;
+}
+.hero .hero_right img{
+    border:10px inset rgb(17, 1, 1) ;
+  border-radius:20px;
+}
+
+.aboutme{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+
+}
+.aboutme h1{
+    color: rgb(58, 58, 225); 
+}
+.aboutme p{
+    /* border: 2px solid black; */
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0 0 15px black;
+    width: 70%;
+    line-height: 20px;
+    border-radius: 20px;
+}
+.experience{
+    display: flex;
+    /* justify-content: space-around */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 50px 40px;
+}
+.experience .experience_card{
+    background-color: rgb(213, 210, 210);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    padding: 20px 40px;
+    align-items: center;
+    border-radius: 20px;
+    border-left:10px solid rgb(0, 0, 0) ;
+    transition:.5s;
+    color: rgb(1, 31, 7);
+}
+
+.experience .experience_card .ex_Desi{
+color: rgb(2, 2, 19);
+}
+
+.experience .experience_card .ex_org{
+color: rgb(4, 118, 112);
+}
+
+.experience .experience_card:hover {
+background-color: rgb(196, 11, 11);
+color: whitesmoke;
+transform: translateX(30px)
+}
